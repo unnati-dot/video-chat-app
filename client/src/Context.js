@@ -7,7 +7,6 @@ import Peer from 'simple-peer';
 const SocketContext = createContext();
 
  const socket = io('https://video-chat-app-ua.herokuapp.com/');
-//const socket = io('https://warm-wildwood-81069.herokuapp.com');
 
 const ContextProvider = ({ children }) => {
   const [callAccepted, setCallAccepted] = useState(false);
@@ -81,7 +80,6 @@ const ContextProvider = ({ children }) => {
 
     window.location.reload();
   };
-
   return (
     <SocketContext.Provider value={{
       call,
